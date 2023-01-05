@@ -239,8 +239,6 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/bond/proprietary/odm/etc/firmware/ts/bond_parade_ofilmg6.bin:$(TARGET_COPY_OUT_ODM)/etc/firmware/ts/bond_parade_ofilmg6.bin \
     vendor/huawei/bond/proprietary/odm/etc/firmware/ts/bond_parade_tm.bin:$(TARGET_COPY_OUT_ODM)/etc/firmware/ts/bond_parade_tm.bin \
     vendor/huawei/bond/proprietary/odm/ta/sign_tool_product_ta.sec:$(TARGET_COPY_OUT_ODM)/ta/sign_tool_product_ta.sec \
-    vendor/huawei/bond/proprietary/odm/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_ODM)/etc/libnfc-nci.conf \
-    vendor/huawei/bond/proprietary/odm/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_ODM)/etc/libnfc-nxp.conf \
     vendor/huawei/bond/proprietary/vendor/etc/cfg_bnd_al10_hisi.ini:$(TARGET_COPY_OUT_VENDOR)/etc/cfg_bnd_al10_hisi.ini \
     vendor/huawei/bond/proprietary/vendor/etc/cfg_bnd_l21_hisi.ini:$(TARGET_COPY_OUT_VENDOR)/etc/cfg_bnd_l21_hisi.ini \
     vendor/huawei/bond/proprietary/vendor/etc/cfg_bnd_l24_hisi.ini:$(TARGET_COPY_OUT_VENDOR)/etc/cfg_bnd_l24_hisi.ini \
