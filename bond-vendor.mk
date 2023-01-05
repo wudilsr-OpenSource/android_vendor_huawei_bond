@@ -241,12 +241,10 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/bond/proprietary/odm/ta/sign_tool_product_ta.sec:$(TARGET_COPY_OUT_ODM)/ta/sign_tool_product_ta.sec \
     vendor/huawei/bond/proprietary/odm/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_ODM)/etc/libnfc-nci.conf \
     vendor/huawei/bond/proprietary/odm/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_ODM)/etc/libnfc-nxp.conf \
-    vendor/huawei/bond/proprietary/vendor/etc/cfg_ane_al00_hisi.ini:$(TARGET_COPY_OUT_VENDOR)/etc/cfg_ane_al00_hisi.ini \
-    vendor/huawei/bond/proprietary/vendor/etc/cfg_ane_lx1_hisi.ini:$(TARGET_COPY_OUT_VENDOR)/etc/cfg_ane_lx1_hisi.ini \
-    vendor/huawei/bond/proprietary/vendor/etc/cfg_ane_lx1_vh_hisi.ini:$(TARGET_COPY_OUT_VENDOR)/etc/cfg_ane_lx1_vh_hisi.ini \
-    vendor/huawei/bond/proprietary/vendor/etc/cfg_ane_lx2_hisi.ini:$(TARGET_COPY_OUT_VENDOR)/etc/cfg_ane_lx2_hisi.ini \
-    vendor/huawei/bond/proprietary/vendor/etc/cfg_ane_lx2j_hisi.ini:$(TARGET_COPY_OUT_VENDOR)/etc/cfg_ane_lx2j_hisi.ini \
-    vendor/huawei/bond/proprietary/vendor/etc/cfg_ane_lx3_hisi.ini:$(TARGET_COPY_OUT_VENDOR)/etc/cfg_ane_lx3_hisi.ini
+    vendor/huawei/bond/proprietary/vendor/etc/cfg_bnd_al10_hisi.ini:$(TARGET_COPY_OUT_VENDOR)/etc/cfg_bnd_al10_hisi.ini \
+    vendor/huawei/bond/proprietary/vendor/etc/cfg_bnd_l21_hisi.ini:$(TARGET_COPY_OUT_VENDOR)/etc/cfg_bnd_l21_hisi.ini \
+    vendor/huawei/bond/proprietary/vendor/etc/cfg_bnd_l24_hisi.ini:$(TARGET_COPY_OUT_VENDOR)/etc/cfg_bnd_l24_hisi.ini \
+    vendor/huawei/bond/proprietary/vendor/etc/cfg_bnd_tl10_hisi.ini:$(TARGET_COPY_OUT_VENDOR)/etc/cfg_bnd_tl10_hisi.ini
 
 PRODUCT_PACKAGES += \
     hwcam.hi6250.BOND.p.GC2375BND_LITEON \
