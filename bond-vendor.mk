@@ -245,6 +245,9 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/bond/proprietary/vendor/etc/cfg_bnd_tl10_hisi.ini:$(TARGET_COPY_OUT_VENDOR)/etc/cfg_bnd_tl10_hisi.ini
 
 PRODUCT_PACKAGES += \
+    libarcsoft_beautyshot \
+    libdcamera_effect \
+    libmrc_cg_beauty \
     hwcam.hi6250.BOND.p.GC2375BND_LITEON \
     hwcam.hi6250.BOND.p.GC2375BND_OFILM \
     hwcam.hi6250.BOND.p.HI259BND_FOXCONN \
@@ -275,10 +278,14 @@ PRODUCT_PACKAGES += \
     hwcam.imx498.pd \
     libSonyPDLibrary \
     libarcsoft_agegender_estimation \
-    libarcsoft_beautyshot \
     libarcsoft_palm_detection \
-    libdcamera_effect \
     libdualCamera_calibration \
+    libmegface \
+    libmeglive \
     libmmi_depth \
     libmpbase \
-    libmrc_cg_beauty
+    libunlockmegcv \
+    HwIms \
+#    hwIms-common \
+#    hwTelephony-common \
+#    telephony-common

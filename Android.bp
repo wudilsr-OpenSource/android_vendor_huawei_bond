@@ -6,6 +6,66 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
+	name: "libarcsoft_beautyshot",
+	owner: "huawei",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/odm/lib/libarcsoft_beautyshot.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/odm/lib64/libarcsoft_beautyshot.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libdcamera_effect",
+	owner: "huawei",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/odm/lib/libdcamera_effect.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/odm/lib64/libdcamera_effect.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libmrc_cg_beauty",
+	owner: "huawei",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/odm/lib/libmrc_cg_beauty.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/odm/lib64/libmrc_cg_beauty.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	device_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "hwcam.hi6250.BOND.p.GC2375BND_LITEON",
 	owner: "huawei",
 	strip: {
@@ -544,23 +604,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libarcsoft_beautyshot",
-	owner: "huawei",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/odm/lib64/libarcsoft_beautyshot.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	device_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libarcsoft_palm_detection",
 	owner: "huawei",
 	strip: {
@@ -578,14 +621,14 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libdcamera_effect",
+	name: "libdualCamera_calibration",
 	owner: "huawei",
 	strip: {
 		none: true,
 	},
 	target: {
 		android_arm64: {
-			srcs: ["proprietary/odm/lib64/libdcamera_effect.so"],
+			srcs: ["proprietary/odm/lib64/libdualCamera_calibration.so"],
 		},
 	},
 	compile_multilib: "64",
@@ -595,14 +638,31 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libdualCamera_calibration",
+	name: "libmegface",
 	owner: "huawei",
 	strip: {
 		none: true,
 	},
 	target: {
 		android_arm64: {
-			srcs: ["proprietary/odm/lib64/libdualCamera_calibration.so"],
+			srcs: ["proprietary/odm/lib64/libmegface.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libmeglive",
+	owner: "huawei",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/odm/lib64/libmeglive.so"],
 		},
 	},
 	compile_multilib: "64",
@@ -646,19 +706,47 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libmrc_cg_beauty",
+	name: "libunlockmegcv",
 	owner: "huawei",
 	strip: {
 		none: true,
 	},
 	target: {
 		android_arm64: {
-			srcs: ["proprietary/odm/lib64/libmrc_cg_beauty.so"],
+			srcs: ["proprietary/odm/lib64/libunlockmegcv.so"],
 		},
 	},
 	compile_multilib: "64",
 	check_elf_files: false,
 	prefer: true,
 	device_specific: true,
+}
+
+android_app_import {
+	name: "HwIms",
+	owner: "huawei",
+	apk: "proprietary/system/app/HwIms/HwIms.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+}
+
+dex_import {
+	name: "hwIms-common",
+	owner: "huawei",
+	jars: ["proprietary/system/framework/hwIms-common.jar"],
+}
+
+dex_import {
+	name: "hwTelephony-common",
+	owner: "huawei",
+	jars: ["proprietary/system/framework/hwTelephony-common.jar"],
+}
+
+dex_import {
+	name: "telephony-common",
+	owner: "huawei",
+	jars: ["proprietary/system/framework/telephony-common.jar"],
 }
 
